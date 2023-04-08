@@ -1,0 +1,222 @@
+:root {
+   --Primary: #72ffff;
+   --Secondary: #9197a4;
+   --Tertiary: #f36ed6;
+   --Bod: #343641;
+   --Card: #27262F;
+   --card2: #4B4B4B;
+   --Fondo: #0b071b;
+   --gray-40: rgba(145, 151, 164, 0.4);
+}
+
+* {
+   font-family: "Poppins", sans-serif;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: var(--Fondo);
+}
+
+/* Textos y parrafos */
+
+/* Definir estilos de encabezados */
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: 600; /* Peso de fuente en negrita */
+}
+
+h1 {
+   font-size: 36px; /* Tamaño de fuente para encabezado H1 */
+   font-weight: 800;
+}
+
+h2 {
+   font-size: 24px; /* Tamaño de fuente para encabezado H2 */
+}
+
+h3 {
+   font-size: 21px; /* Tamaño de fuente para encabezado H3 */
+}
+
+h4 {
+   font-size: 18px; /* Tamaño de fuente para encabezado H4 */
+}
+
+h5 {
+   font-size: 16px; /* Tamaño de fuente para encabezado H5 */
+}
+
+h6 {
+   font-size: 15px; /* Tamaño de fuente para encabezado H6 */
+}
+
+/* Definir estilos de párrafos */
+p {
+   font-weight: 400; /* Peso de fuente normal */
+   font-size: 12px; /* Tamaño de fuente para párrafos */
+   line-height: 18px;
+}
+
+.p-regular {
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 22px;
+}
+
+a {
+   text-decoration: none;
+   color: white;
+}
+
+a:hover {
+   color: var(--Primary);
+   cursor: pointer;
+}
+
+/* Fondos */
+
+.bg-primary {
+   background-color: var(--Primary);
+}
+
+.bg-secundary {
+   background-color: var(--Secondary);
+}
+
+.bg-bod {
+   background-color: var(--Bod);
+}
+
+.bg-card {
+   background-color: var(--Card);
+}
+
+.bg-fondo {
+   background-color: var(--Fondo);
+}
+
+/* Textos */
+
+.txt-primary {
+   color: var(--Primary);
+}
+
+.txt-secondary {
+   color: var(--Secondary);
+}
+
+/* Bordes */
+
+.border-azul {
+   background: linear-gradient(
+      152.95deg,
+      rgba(0, 240, 255, 0.6) 29.41%,
+      rgba(82, 0, 255, 0) 67.18%
+   );
+}
+
+.border-amarillo {
+   background: linear-gradient(
+      139.07deg,
+      #ffe05f 47.37%,
+      #ffd24e 54.44%,
+      #ffc038 66.12%,
+      #ffb52b 77.39%,
+      #ffb127 87.78%
+   );
+}
+
+.border-gray-40 {
+   border: 1px solid var(--gray-40);
+}
+
+/* Botones */
+
+.btn-primary {
+   background: linear-gradient(
+      90deg,
+      rgba(114, 255, 255, 1) 0%,
+      rgba(36, 120, 129, 1) 100%
+   );
+   border-radius: 8px;
+   border: none;
+   padding: 16px 24px;
+}
+
+.btn-primary:hover {
+   background: linear-gradient(
+      90deg,
+      rgba(36, 120, 129, 1) 0%,
+      rgba(114, 255, 255, 1) 100%
+   );
+}
+
+.btn-secondary {
+   background-color: #27262f;
+   border-radius: 8px;
+   border: none;
+   padding: 16px 24px;
+}
+
+.btn-tertiary {
+   border-radius: 8px;
+   background: var(--Fondo);
+   border-color: var(--Primary);
+   padding: 16px 24px;
+   color: white;
+}
+
+.btn-tertiary:hover{
+   background-color: var(--Card);
+   border-color: var(--Primary);
+}
+
+.btn-cuarternay {
+   background-color: var(--Bod);
+   border-radius: 10px;
+   padding: 10px 10px;
+}
+
+.btn-quinary {
+   background-color: var(--Bod);
+   padding: 20px;
+   border-radius: 15px;
+   color: white;
+   border: 1px solid var(--gray-40);
+}
+
+
+
+
+/* imput */
+
+.form-control {
+   background-color: var(--Card);
+   border: 1px solid var(--gray-40);
+   padding: 15px;
+   color: white;
+}
+
+.form-control:focus {
+   background-color: var(--Card);
+   border-color: var(--Primary);
+   color: white;
+}
+
+.form-select {
+   background-color: var(--Card);
+   border: 1px solid var(--gray-40);
+   color: white;
+}
+
+.form-select:focus {
+   background-color: var(--Card);
+   border-color: var(--Primary);
+   color: white;
+}

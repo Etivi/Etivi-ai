@@ -1,0 +1,290 @@
+:root {
+   --Primary: #72ffff;
+   --Secondary: #9197a4;
+   --Tertiary: #f36ed6;
+   --Bod: #343641;
+   --Card: #27262F;
+   --card2: #4B4B4B;
+   --Fondo: #0b071b;
+   --gray-40: rgba(145, 151, 164, 0.4);
+}
+
+/* Menu lateral */
+
+.k-menu-links h3:hover {
+   color: var(--Primary);
+}
+
+/* Pagina de inicio */
+
+.bg-start {
+	background-image: url(assets/fondo-estrellas.svg);
+}
+
+.logo-inicio {
+	width: 203px;
+}
+
+.txt-iniciar {
+	font-size: 48px;
+	line-height: 72px;
+	font-weight: 600;
+}
+
+
+/* Pagina de catalogo */
+
+.cuadrado-imagen {
+   height: 190px;
+   border: 1px dashed var(--gray-40);
+}
+
+.tota-1 {
+   margin: -150px 15px 15px 15px;
+   
+}
+
+.tota-2 {
+   margin-top: 150px;
+}
+
+/* Personal de la empresa */
+
+.contentCarrousel {
+   height: 830px;
+   overflow: hidden;
+      
+}
+
+.itemCarrousel {
+   height: 100%;  
+   
+}
+
+.flechasCarrousel {
+   margin-top: 150px;
+   
+}
+
+
+.card-ai {
+   margin-top: -20px;
+}
+
+/* Perfil de clientes */
+
+.perfilSquare {
+   height: 180px;
+   border-radius: 8px;   
+}
+
+.perfilSquare> h4 {
+   text-shadow: 0px 4px 4px var(--Card);
+}
+
+#Perfil-image1 {
+   background-image: url(../assets/perfil-cliente1-min.png);
+   background-size: cover;
+   border: 1px solid var(--gray-40);
+}
+#Perfil-image2 {
+   background-image: url(../assets/perfil-cliente2-min.png);
+   background-size: cover;
+   border: 1px solid var(--gray-40);
+}
+#Perfil-image3 {
+   background-image: url(../assets/perfil-cliente3-min.png);
+   background-size: cover;
+   border: 1px solid var(--gray-40);
+}
+#Perfil-image4 {
+   background-image: url(../assets/perfil-cliente4-min.png);
+   background-size: cover;
+   border: 1px solid var(--gray-40);
+}
+
+.pc-card {
+   max-height: 200px;
+   padding: 0px 3px;
+   overflow: hidden;
+   overflow-y: auto;
+}
+
+.pc-card::-webkit-scrollbar {
+   width: 7px;
+}
+
+.pc-card::-webkit-scrollbar-thumb {
+   background-color: var(--Secondary);
+}
+
+/* Pagina informacion de inicio */
+
+.ico-ai {
+   width: 150px;
+   
+}
+
+/* Pagina Etivi -ai */
+
+.boton-ai {
+   background: var(--Primary);
+   border-radius: 50px;
+   box-shadow: 0 0 50px var(--Primary),
+               0 0 70px var(--Primary),
+               0 0 120px var(--Primary),
+               0 0 155px var(--Primary),
+               0 0 200px var(--Primary),
+               0 0 250px var(--Primary),
+               0 0 300px var(--Primary);              
+}
+
+.boton-ai:hover {
+   background: var(--Primary);
+   box-shadow: 0 0 5px var(--Primary),
+               0 0 25px var(--Primary),
+               0 0 50px var(--Primary),
+               0 0 100px var(--Primary);
+}
+
+.card-gpt {
+   border: 1px solid var(--gray-40);
+   border-radius: 15px 15px 0 0;
+  }
+
+  .headerChat {
+   border: 1px solid var(--gray-40);
+   border-radius: 15px 15px 0 0;
+   background-color: var(--card2);
+  }
+
+  .icoChat img{
+   height: 20px;
+  }
+
+  .envio-Ok {
+   border-top: 1px solid var(--Primary);
+   border-radius: 24px 24px 0 0;
+  }
+
+ #button-ok {
+   margin-top: -45px;
+ }
+
+.shadowRojo {
+   background: #ED7D5D40;
+   border-radius: 50px;
+   box-shadow: 0 0 70px #ED7D5D,
+               0 0 150px #ED7D5D;
+}
+ 
+ .buttonAnimate {
+   position: relative;
+   display: inline-block;
+   padding: 10px 20px;
+   color: #03e9f4;
+   font-size: 16px;
+   text-decoration: none;
+   text-transform: uppercase;
+   overflow: hidden;
+   transition: .5s;
+   letter-spacing: 4px
+ }
+ 
+ .buttonAnimate:hover {
+   background: #03e9f4;
+   color: #fff;
+   border-radius: 10px;
+   box-shadow: 0 0 5px #03e9f4,
+               0 0 25px #03e9f4,
+               0 0 50px #03e9f4,
+               0 0 100px #03e9f4;
+ }
+ 
+ .buttonAnimate span {
+   position: absolute;
+   display: block;
+ }
+ 
+ .buttonAnimate span:nth-child(1) {
+   top: 0;
+   left: -100%;
+   width: 100%;
+   height: 2px;
+   background: linear-gradient(90deg, transparent, #03e9f4);
+   animation: btn-anim1 1s linear infinite;
+ }
+ 
+ @keyframes btn-anim1 {
+   0% {
+     left: -100%;
+   }
+   50%,100% {
+     left: 100%;
+   }
+ }
+ 
+ .buttonAnimate span:nth-child(2) {
+   top: -100%;
+   right: 0;
+   width: 2px;
+   height: 100%;
+   background: linear-gradient(180deg, transparent, #03e9f4);
+   animation: btn-anim2 1s linear infinite;
+   animation-delay: .25s
+ }
+ 
+ @keyframes btn-anim2 {
+   0% {
+     top: -100%;
+   }
+   50%,100% {
+     top: 100%;
+   }
+ }
+ 
+ .buttonAnimate span:nth-child(3) {
+   bottom: 0;
+   right: -100%;
+   width: 100%;
+   height: 2px;
+   background: linear-gradient(270deg, transparent, #03e9f4);
+   animation: btn-anim3 1s linear infinite;
+   animation-delay: .5s
+ }
+ 
+ @keyframes btn-anim3 {
+   0% {
+     right: -100%;
+   }
+   50%,100% {
+     right: 100%;
+   }
+ }
+ 
+ .buttonAnimate span:nth-child(4) {
+   bottom: -100%;
+   left: 0;
+   width: 2px;
+   height: 100%;
+   background: linear-gradient(360deg, transparent, #03e9f4);
+   animation: btn-anim4 1s linear infinite;
+   animation-delay: .75s
+ }
+ 
+ @keyframes btn-anim4 {
+   0% {
+     bottom: -100%;
+   }
+   50%,100% {
+     bottom: 100%;
+   }
+ }
+
+/* Areas internas */
+
+
+#trofeo-clasificacion {
+   margin-top: -15px;
+}
+
